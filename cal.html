@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <div class="container">
+      hello
+      <form action="">
+        <p>FX125</p>
+        <input type="text" id="screen">
+        <br>
+        <input type="button" value="7" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="8" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="9" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="/" class="buttonnum" onclick="btnclick(value)">
+
+
+        <input type="button" value="4" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="5" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="6" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="*" class="buttonnum" onclick="btnclick(value)">
+
+        <input type="button" value="1" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="2" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="3" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="+" class="buttonnum" onclick="btnclick(value)">
+
+
+        <input type="button" value="c" class="clear" onclick="functioncelar()">
+        <input type="button" value="0" class="buttonnum" onclick="btnclick(value)">
+        <input type="button" value="=" class="buttonnum" onclick="result()">
+        <input type="button" value="-" class="buttonnum" onclick="btnclick(value)">
+      </form>
+    </div>
+    <script>
+      var screen=document.getElementById("screen");
+      function btnclick(value){
+        screen.value+=value;
+      }
+
+      function functioncelar(){
+        screen.value="";
+      }
+
+
+      function result(){
+        var result=eval(screen.value)
+        screen.value=result;
+      }
+
+    </script>
+
+    
+</body>
+</html
